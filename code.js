@@ -23,12 +23,12 @@ $('#click-android').on('click', function() {
      current color by 1. */
     if (currentColor == colors.length-1) currentColor = 0;
     else currentColor++;
-    $.newColor = colors[currentColor];
-    $('meta[name=theme-color]').remove();
-    $('head').append( '<meta name="theme-color" content="'+$.newColor+'">' );
+
     /* now we can set the body's style - backgroundColor to the
      new color. */
     document.body.style.backgroundColor = colors[currentColor];
+    $('meta[name=theme-color]').remove();
+    $('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
 });
 
 
