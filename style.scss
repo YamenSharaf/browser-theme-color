@@ -11,7 +11,10 @@ $title-font:                Oswald, sans-serif !default;
   color: $my-white !important;
   font-family: $title-font;
   h1{
-  font-size: 60px;  
+  font-size: 60px;
+  i {
+    font-size: 500px;
+  }
   }
 
   .my-thing {
