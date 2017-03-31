@@ -1,6 +1,3 @@
-
-/////////////////////////////////////
-
 // an array of strings (hex colors)
 var colors = [
   '#362143',
@@ -25,6 +22,7 @@ $('#click-android').on('click', function() {
     else currentColor++;
 // Actual Change of colors
     document.body.style.backgroundColor = colors[currentColor];
+    //Android status bar color attributes
     $('meta[name=theme-color]').remove();
     $('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
 });
