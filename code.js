@@ -3,11 +3,11 @@
 
 // an array of strings (hex colors)
 var colors = [
-  '#7b7554',
-  '#17183b',
-  '#a11692',
+  '#362143',
+  '#DB649C',
+  '#754792',
   '#ff4f79',
-  '#ffb49a'
+  '#171717'
 ];
 // a variable for the current color index
 var currentColor = 0;
