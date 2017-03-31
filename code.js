@@ -28,8 +28,10 @@ $('#click-android').on('click', function() {
      new color. */
     document.body.style.backgroundColor = colors[currentColor];
     $('meta[name=theme-color]').remove();
-    $('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
+    $('head').append( '<meta name="theme-color" content="#ff4f79">' );
 });
+
+//$('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
 
 
 
