@@ -12,11 +12,7 @@ $title-font:                Oswald, sans-serif !default;
   display: flex;
   align-items: center;
 }
-body {
-    margin: 0;
-    height: 100%;
-    overflow: auto;
-}
+
 .my-thing {
   min-width: 100%;
   text-align: center;
@@ -26,15 +22,16 @@ body {
   i {
     padding-top: -15px;
     margin-top: -15px;
-    font-size: 40em;
+    font-size: 50em;
   }
   h1{
-  font-size: 60px;
+  font-size: 90px;
   margin-bottom: -10px;
 
   }
   p {
     a:link {
+    font-size: 40px;
     text-decoration: none;
     color: $my-white !important;
     }
