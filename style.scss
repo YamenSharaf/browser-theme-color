@@ -5,24 +5,42 @@ $title-font:                Oswald, sans-serif !default;
 
 
 //main section
-.the-section {
-  height: 100%;
-  min-height: 65vh;
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+}
+.my-thing {
+  min-width: 100%;
+  text-align: center;
   color: $my-white !important;
   font-family: $title-font;
+  letter-spacing: 5px;
+  i {
+    padding-top: -15px;
+    margin-top: -15px;
+    font-size: 40em;
+  }
   h1{
   font-size: 60px;
-  i {
-    font-size: 500px;
-  }
-  }
+  margin-bottom: -10px;
 
-  .my-thing {
-    position: absolute;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       margin: auto;
+  }
+  p {
+    a:link {
+    text-decoration: none;
+    color: $my-white !important;
+    }
+    a:visited {
+      color: $my-white !important;
+    }
+
   }
 }

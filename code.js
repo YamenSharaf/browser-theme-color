@@ -6,43 +6,34 @@ var colors = [
   '#362143',
   '#DB649C',
   '#754792',
+  '#FF9800',
+  '#1976D2',
+  '#9E9E9E',
   '#ff4f79',
-  '#171717'
+  '#8BC34A',
+  '#171717',
+  '#00BCD4'
 ];
-// a variable for the current color index
+// Variable for the current color index
 var currentColor = 0;
 
-// my click function
-
+// On click function (Replace #click-android with the suitable ID of your target)
 $('#click-android').on('click', function() {
-    // Just replacing the value of the 'content' attribute will not work.
 
-    /* we need to check if the current color is the last object
-     in the array. If it is, we set the value back to 0 (the
-     first color in the array. Otherwise, we increment the
-     current color by 1. */
+// Color Switcher
     if (currentColor == colors.length-1) currentColor = 0;
     else currentColor++;
-
-    /* now we can set the body's style - backgroundColor to the
-     new color. */
+// Actual Change of colors
     document.body.style.backgroundColor = colors[currentColor];
     $('meta[name=theme-color]').remove();
     $('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
 });
 
-//$('head').append( '<meta name="theme-color" content="'+colors[currentColor]+'">' );
-
-
-
-
-// our click function
+// Calling the function
 function click() {
-
 }
 
-/* when the window has finished loading, update the body to
- the first color */
+//when the window has finished loading, update the body to the first color as fallback
 window.onload = function() {
   document.body.style.backgroundColor = colors[currentColor];
 }
